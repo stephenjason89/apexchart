@@ -1,0 +1,25 @@
+{
+    "projects": {
+        "ERP": {
+            "schemaPath": "./graphql/schema.graphql",
+            "includes": ["./graphql/**","./schema-directives.*"]
+        },
+        "remote": {
+            "schemaPath": "introspection.graphql",
+            "excludes": [
+                "./graphql/**", "./programmatic-types.graphql"
+            ],
+            "extensions": {
+                "endpoints": {
+                    "Default GraphQL Endpoint": {
+                        "url": "http://localhost:8000/graphql",
+                        "headers": {
+                            "user-agent": "JS GraphQL"
+                        },
+                        "introspect": true
+                    }
+                }
+            }
+        }
+    }
+}
