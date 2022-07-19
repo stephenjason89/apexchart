@@ -35,17 +35,17 @@
 </template>
 
 <script setup>
-import { useQuery } from '@vue/apollo-composable'
-import gql from 'graphql-tag'
-export const reveal = ref(false)
-const { onResult } = useQuery(gql`
-    query {
-        company {
-            ceo
-        }
-    }
-`)
-onResult(({ data }) => {
-    console.log(data)
-})
+const reveal = ref(false)
 </script>
+<!--This works though-->
+<!--<script>-->
+<!--export default {-->
+<!--    name: 'Composition',-->
+<!--    setup() {-->
+<!--        const reveal = ref(false)-->
+<!--        return {-->
+<!--            reveal,-->
+<!--        }-->
+<!--    },-->
+<!--}-->
+<!--</script>-->
