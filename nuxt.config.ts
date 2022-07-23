@@ -52,12 +52,5 @@ export default defineNuxtConfig({
         // hardSource: process.env.NODE_ENV !== 'production',
         // parallel: process.env.NODE_ENV !== 'production',
         // cache: process.env.NODE_ENV !== 'production',
-
-        loaders: {
-            vue: {
-                // @ts-ignore
-                compiler: require('vue-template-babel-compiler'),
-            },
-        },
     },
 })
