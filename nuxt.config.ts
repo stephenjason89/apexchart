@@ -2,7 +2,7 @@ import { defineNuxtConfig } from '@nuxt/bridge'
 
 export default defineNuxtConfig({
     srcDir: 'client/',
-    ssr: process.env.SSR === 'true',
+    ssr: true,
     dev: process.env.NODE_ENV !== 'production',
     alias: {
         tslib: 'tslib/tslib.es6.js',
