@@ -24,8 +24,10 @@
     "dependencies": {
         "@nuxtjs/apollo": "^4.0.1-rc.5",
         "@vue/apollo-composable": "^4.0.0-alpha.17",
+        "apexcharts": "^3.35.5",
         "graphql-tag": "^2.12.6",
-        "nuxt-edge": "latest"
+        "nuxt-edge": "latest",
+        "vue-apexcharts": "^1.6.2"
     },
     "devDependencies": {
         "@commitlint/cli": "^17.0.0",
