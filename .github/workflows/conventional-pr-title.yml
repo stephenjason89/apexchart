@@ -1,0 +1,2 @@
+- name: conventional-pr-title
+  uses: aslafy-z/conventional-pr-title-action@v2.2.0
