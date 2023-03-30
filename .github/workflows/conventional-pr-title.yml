@@ -1,2 +1,17 @@
-- name: conventional-pr-title
-  uses: aslafy-z/conventional-pr-title-action@v2.2.0
+name: Conventional PR Title
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+jobs:
+  check-pr-title:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Conventional PR Title
+        uses: aslafy-z/conventional-pr-title-action@v2.2.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
