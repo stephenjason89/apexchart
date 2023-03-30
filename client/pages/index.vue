@@ -13,6 +13,7 @@
 
 <script>
 import Test from '~/components/Test'
+// wow
 export default {
     name: 'Home',
     components: {
